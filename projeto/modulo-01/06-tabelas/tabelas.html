@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tábelas</title>
+
+<style>
+    table,th,td {border:1px solid greenyellow}
+    th,td {padding: 7px}
+    .Nome {background-color: rgb(95, 95, 167);}
+    .E-mail {background-color: brown;}
+    .Telefone {background-color: coral;}
+    .Cargo {background-color: aqua}
+
+</style>
+</head>
+<body>
+    <h1>Tábelas</h1>
+
+<table>
+    <caption>Cadastro de clientes</caption>
+    <colgroup>
+    <col class="Nome">
+    <col class="E-mail">
+    <col class="Telefone">
+    <col class="Cargo">
+    </colgroup>
+
+    <tr>
+        <th>Nome:</th> <!-- th means title -->
+        <th>E-mail:</th>
+        <th>Telefone:</th>
+        <th>Cargo:</th>
+    </tr>
+    
+    <tr>
+        <td>Leonardo </td> <!-- td means data,th(title) 1 corresponds to td(data) 1. successively-->
+        <td>leonardoamaral1585@gmail.com </td>
+        <td>(82)9-9989-3640</td>
+        <td rowspan="2">Desenvolvedor Web</td> <!--the runspan will occupy 2 lines.-->
+    </tr>
+    <tr>
+        <td>Amaral </td> <!-- td means data,th(title) 1 corresponds to td(data) 1. successively-->
+        <td>lleonardoamaral2011@hotmail.com </td>
+        <td>(82)9-9989-3640</td>
+    </tr>
+    <td colspan="4">Total: 2</td> <!--the colspan will occupy 3 columns.     -->
+    
+    <tr>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
